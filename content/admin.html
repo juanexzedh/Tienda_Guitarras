@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="../styles/admin.css">
+</head>
+
+<body>
+
+    <h1>Admin Panel 🎸</h1>
+
+    <div class="admin-form">
+
+        <h2>Add New Guitar</h2>
+        <input type="text" id="maker" placeholder="Maker">
+        <input type="text" id="model" placeholder="Model">
+        <input type="number" id="introduced" placeholder="Introduced">
+        <input type="number" id="precio" placeholder="Price">
+        <select id="tipo">
+            <option value="electrica">
+                Electrica
+            </option>
+            <option value="acustica">
+                Acustica
+            </option>
+            <option value="electroacustica">
+                Electroacustica
+            </option>
+        </select>
+
+        <input type="text" id="imagen"
+            placeholder="/assets/img/example.webp">
+
+        <input type="text" id="imagenProducto"
+            placeholder="/assets/img/example_full.webp">
+
+        <input type="text" id="reviewVideo"
+            placeholder="Youtube URL">
+
+        <!-- FEATURES -->
+        <div id="featuresContainer">
+            <h3>Features</h3>
+        </div>
+        <button type="button" id="addFeature">
+            Add Feature
+        </button>
+
+        <!-- FINISHES -->
+        <div id="finishesContainer">
+            <h3>Finishes</h3>
+        </div>
+
+        <button type="button" id="addFinish">
+            Add Finish
+        </button>
+
+        <!-- USERS -->
+        <div id="usersContainer">
+            <h3>Notable Users</h3>
+        </div>
+        <button type="button" id="addUser">
+            Add User
+        </button>
+        <button id="guardarProducto">
+            Save Guitar
+        </button>
+
+    </div>
+
+    <div></div>
+
+    <div class="search-container">
+        <input 
+            type="text"
+            id="buscadorAdmin"
+            placeholder="Search by ID, Maker or Model..."
+        >
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Image</th>
+                <th>Maker</th>
+                <th>Model</th>
+                <th>Price</th>
+                <th>Type</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody id="tablaProductos">
+        </tbody>
+
+    </table>
+    <script src="../jvscript/admin.js"></script>
+
+</body>
+</html>

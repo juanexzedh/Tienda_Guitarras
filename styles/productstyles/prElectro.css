@@ -1,0 +1,112 @@
+body{
+    margin:0;
+    font-family:'Montserrat',sans-serif;
+    color:white;
+    background-image: url("../../images/backgroundelectro.png");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+.transparencia{
+    background:rgba(0,0,0,0.75);
+    min-height:100vh;
+    padding-bottom:60px;
+}
+
+header{
+    text-align:center;
+    padding:40px;
+}
+
+header h1{
+    font-family:'Playfair Display',serif;
+    font-size:3rem;
+    color:rgb(162, 241, 198);
+}
+
+.volver-inicio{
+    color:rgb(162, 241, 198);
+    text-decoration:none;
+    border:1px solid rgb(162, 241, 198);
+    padding:6px 15px;
+    border-radius:20px;
+    font-size:0.9rem;
+}
+/* LAYOUT PRINCIPAL */
+.product-layout{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    padding:20px;
+}
+/* CAJA DE IMAGEN */
+.image-box{
+    background:white;
+    border-radius:10px;
+    padding:30px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+/* IMAGEN DEL PRODUCTO */
+.image-box img{
+    max-width:100%;
+    max-height:500px;
+    object-fit:contain;
+}
+/* ESPECIFICACIONES */
+.spec-box{
+    background:#1a1a1a;
+    border-radius:10px;
+    padding:25px;
+}
+
+.spec-box h2{
+    color:rgb(162, 241, 198);
+}
+
+.spec-box ul{
+    list-style:none;
+    padding:0;
+}
+
+.spec-box li{
+    margin-bottom:12px;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+    padding-bottom:6px;
+}
+/* BOTÓN */
+.buy-btn{
+    width:100%;
+    margin-top:20px;
+    background:transparent;
+    border:1px solid rgb(162, 241, 198);
+    color:rgb(162, 241, 198);
+    padding:10px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.buy-btn:hover{
+    background:rgb(162, 241, 198);
+    color:black;
+}
+
+/* VIDEO */
+.video-box{
+    max-width:1000px;
+    margin:40px auto;
+    padding:20px;
+}
+
+.video-box h2{
+    color:rgb(162, 241, 198);
+    margin-bottom:20px;
+}
+
+.video-box iframe{
+    border-radius:10px;
+}

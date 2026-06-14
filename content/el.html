@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electroacoustic Collection | Walter's Guitar Shop</title>
+    <link rel="stylesheet" href="../styles/elstyle.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="transparencia">
+        <header>
+            <a href="../index.html" class="volver-inicio">← Return To Main</a>
+            <h1>Electric</h1>
+
+            <p class="subtitle">
+                Best of Electric Guitars
+            </p>
+        </header>
+
+
+        <main class="contenedor-principal">
+            <aside class="sidebar">
+                <div class="sidebar-caja">
+                    <h3>Search</h3>
+                    <input 
+                        id="searchInput" 
+                        type="text" 
+                        placeholder="Buscar guitarra..."
+                    >
+                    
+                    <h3>Max Price</h3>
+                    <input 
+                        type="range"
+                        id="priceSlider"
+                        min="0"
+                        max="3000000"
+                        step="50000"
+                        value="3000000"
+                    >
+                    <label>
+                        <input type="checkbox" id="activarPrecio">
+                    </label>
+                    <p> Until <span id="priceValue">$3.000.000</span> </p>
+                    <h3>Brand</h3>
+                    <div id="brandFilters"></div>
+                </div>
+            </aside>
+
+            <div class="contenido">
+                <section class="productos" id="contenedor-guitarras"></section>
+                <div id="paginacion" class="paginacion"></div>
+            </div>
+        </main>
+
+    </div>
+    <script src="../jvscript/script.js"></script>
+</body>
+</html>

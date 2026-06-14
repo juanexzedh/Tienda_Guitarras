@@ -1,0 +1,142 @@
+/* Variables para los cambios de de color */
+:root {
+    --primary-red: #ff0b0b;
+    --acoustic-orange: #ff9800;
+    --electro-green: #40e040;
+    --electric-blue: #00bfff;
+    --dark-bg: rgba(0, 0, 0, 0.7);
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #f4f4f4;
+    background-color: #121212;
+    overflow-x: hidden;
+}
+
+/* --- Header --- */
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/Trastes.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    margin: 0;
+    color: var(--primary-red);
+    letter-spacing: 5px;
+}
+
+/* --- Section & Cards --- */
+.guita {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../images/bckgrndfinal.png");
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 38px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+.contenedor-guitarras {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    width: 320px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(5px 5px 15px rgba(0,0,0,0.5));
+    transition: 0.3s;
+}
+
+.card:hover img {
+    transform: rotate(-5deg) scale(1.05);
+}
+
+/* --- Botones y Letra --- */
+.card-info p {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin: 20px 0;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+/*-- Colores para las tarjetas --*/
+.boton-acoustic { background: var(--acoustic-orange); }
+.boton-electro { background: var(--electro-green); }
+.boton-electric { background: var(--electric-blue); }
+
+.acoustic { color: var(--acoustic-orange); }
+.electro { color: var(--electro-green); }
+.electric { color: var(--electric-blue); }
+
+
+/*-- CSS para el checkout --*/
+#checkoutCard {
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+#checkoutCard img {
+    max-height: 250px;
+    object-fit: contain;
+}
+
+/* CSS para el historial de compras */
+.historial-fecha {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: 5px;
+}
+
+.historial-precio {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}

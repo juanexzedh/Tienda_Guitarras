@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:
+        linear-gradient(
+            rgba(10,10,10,0.85),
+            rgba(10,10,10,0.95)
+        ),
+        url("../img/login_bg.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+/* CONTENEDOR */
+.login-container {
+    width: 380px;
+    padding: 40px;
+    background: rgba(15,15,15,0.85);
+    border-radius: 20px;
+    border: 1px solid rgba(212,175,55,0.15);
+    box-shadow:
+        0 0 40px rgba(0,0,0,0.7),
+        0 0 10px rgba(212,175,55,0.1);
+    backdrop-filter: blur(10px);
+    animation: fadeIn 0.8s ease;
+}
+
+/* TITULO */
+.login-container h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.login-container h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    margin: 10px auto 0;
+    background: #d4af37;
+}
+
+/* INPUTS */
+.login-container input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background: #1e1e1e;
+    color: white;
+    font-size: 0.95rem;
+    transition: all 0.25s ease;
+}
+
+.login-container input::placeholder {
+    color: #777;
+}
+
+.login-container input:focus {
+    background: #262626;
+    border: 1px solid #d4af37;
+    box-shadow: 0 0 8px rgba(212,175,55,0.3);
+}
+
+/* BOTON */
+.login-container button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #d4af37, #f0c94d);
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-container button:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow:
+        0 5px 15px rgba(212,175,55,0.4);
+    background: linear-gradient(135deg, #f0c94d, #d4af37);
+}
+
+/* TEXTO EXTRA */
+.login-container p {
+    color: #aaa;
+    text-align: center;
+    margin-top: 18px;
+    font-size: 0.85rem;
+}
+
+/* ERROR */
+.error-message {
+    color: #ff4d4d;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.85rem;
+}
+
+/* ANIMACION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

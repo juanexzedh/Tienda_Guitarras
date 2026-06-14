@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f0f0f;
+    color: white;
+    padding: 30px;
+}
+
+/* TITULOS */
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 15px;
+}
+
+/* FORMULARIO */
+.admin-form {
+    background: #1b1b1b;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid #333;
+}
+
+.admin-form input,
+.admin-form select {
+    padding: 12px;
+    background: #111;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.admin-form input:focus,
+.admin-form select:focus {
+    outline: none;
+    border-color: orange;
+}
+
+/* BOTONES */
+button {
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: scale(1.03);
+}
+
+.delete {
+    background: crimson;
+    color: white;
+}
+
+.edit {
+    background: orange;
+    color: black;
+}
+
+#guardarProducto {
+    background: dodgerblue;
+    color: white;
+    width: fit-content;
+}
+
+/* CONTENEDORES DINAMICOS */
+#featuresContainer,
+#finishesContainer,
+#usersContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* TABLA */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1b1b1b;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #222;
+}
+
+tr:hover {
+    background: #202020;
+}
+
+/* IMAGENES */
+img {
+    width: 100px;
+    border-radius: 6px;
+}

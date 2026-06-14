@@ -1,0 +1,82 @@
+/* Tablets */
+@media (max-width: 900px) {
+
+    body{
+        font-size:15px;
+    }
+
+    header h1{
+        font-size:2.2rem;
+    }
+
+    /* layouts en grid pasan a una columna */
+    .container,
+    .product-layout{
+        grid-template-columns:1fr !important;
+    }
+
+    /* cards de guitarras */
+    .cards-container{
+        grid-template-columns:repeat(2,1fr) !important;
+    }
+
+    /* imágenes de producto */
+    .image-box img{
+        max-height:450px;
+    }
+
+    /* videos */
+    .video-box iframe{
+        height:320px;
+    }
+
+}
+
+/* Celulares */
+@media (max-width:600px){
+
+    header{
+        padding:20px;
+    }
+
+    header h1{
+        font-size:1.8rem;
+    }
+
+    /* cards pasan a 1 columna */
+    .cards-container{
+        grid-template-columns:1fr !important;
+    }
+
+    /* filtros se acomodan */
+    .filters{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    /* imágenes */
+    .image-box{
+        padding:15px;
+    }
+
+    .image-box img{
+        max-height:350px;
+    }
+
+    /* especificaciones */
+    .spec-box{
+        padding:18px;
+    }
+
+    /* botones */
+    .buy-btn{
+        padding:10px;
+        font-size:0.9rem;
+    }
+
+    /* videos */
+    .video-box iframe{
+        height:250px;
+    }
+
+}

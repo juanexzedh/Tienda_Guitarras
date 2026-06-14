@@ -1,0 +1,16 @@
+# Laravel
+mi_api/vendor/
+mi_api/.env
+
+# Logs
+*.log
+
+# Node
+node_modules/
+
+# VSCode
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
