@@ -40,9 +40,13 @@ El proyecto fue desarrollado utilizando tecnologías web modernas para el fronte
 
 ![Acusticas](Screenshots/Seccion_Acustica.png)
 
+---
+
 ### Electroacústicas
 
 ![Electroacusticas](Screenshots/Seccion_Electroacustica.png)
+
+---
 
 ### Eléctricas
 
@@ -53,6 +57,8 @@ El proyecto fue desarrollado utilizando tecnologías web modernas para el fronte
 ## Detalle del producto
 
 ![Especificaciones](Screenshots/Especificaciones.png)
+
+---
 
 ![Review](Screenshots/Review.png)
 
