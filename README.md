@@ -46,7 +46,7 @@ El proyecto fue desarrollado utilizando tecnologías web modernas para el fronte
 
 ### Eléctricas
 
-![Electricas](Screenshots/Seccion_Electrica.png)
+![Electricas](Screenshots/Seccion_Electricas.png)
 
 ---
 
@@ -54,7 +54,7 @@ El proyecto fue desarrollado utilizando tecnologías web modernas para el fronte
 
 ![Especificaciones](Screenshots/Especificaciones.png)
 
-![Review](Screenshots/Especificaciones2.png)
+![Review](Screenshots/Review.png)
 
 ---
 
